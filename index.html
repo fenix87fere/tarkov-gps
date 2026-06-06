@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPS Calles de Tarkov</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div id="mapa"></div>
+
+  <div id="panel">
+    <h3>🧭 GPS Tarkov</h3>
+    <p>Haz clic en el mapa para colocar <b>INICIO</b> (verde) y luego <b>DESTINO</b> (rojo).</p>
+    <button id="btn-reiniciar">🗑️ Reiniciar ruta</button>
+    <p id="info-ruta"></p>
+    <p style="font-size:0.8rem; margin-top:10px;">
+      <i>Los nodos del grafo son aproximados.<br>Amplía la imagen para mayor precisión.</i>
+    </p>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
