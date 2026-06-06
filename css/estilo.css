@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mapa {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+/* Panel de control flotante */
+#panel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ddd;
+  padding: 15px 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+  max-width: 260px;
+  font-size: 0.9rem;
+  border: 1px solid #444;
+}
+
+#panel h3 {
+  margin: 0 0 10px 0;
+  color: #ffb800;
+}
+
+#panel p {
+  margin: 8px 0;
+}
+
+#btn-reiniciar {
+  background: #c44;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+#btn-reiniciar:hover {
+  background: #e55;
+}
+
+#info-ruta {
+  color: #0f0;
+  font-weight: bold;
+  margin-top: 10px;
+}
