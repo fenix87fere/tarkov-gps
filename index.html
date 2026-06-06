@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPS Calles de Tarkov</title>
+  <title>GPS - Streets of Tarkov</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -11,13 +11,18 @@
   <div id="mapa"></div>
 
   <div id="panel">
-    <h3>🧭 GPS Tarkov</h3>
-    <p>Haz clic en el mapa para colocar <b>INICIO</b> (verde) y luego <b>DESTINO</b> (rojo).</p>
-    <button id="btn-reiniciar">🗑️ Reiniciar ruta</button>
-    <p id="info-ruta"></p>
-    <p style="font-size:0.8rem; margin-top:10px;">
-      <i>Los nodos del grafo son aproximados.<br>Amplía la imagen para mayor precisión. </i>
-    </p>
+    <h3>🎯 GPS Tarkov</h3>
+    <div id="instrucciones">
+      <p>1️⃣ Clic en el mapa → <b style="color:#0f0">INICIO</b></p>
+      <p>2️⃣ Clic en el mapa → <b style="color:#f44">DESTINO</b></p>
+      <p>3️⃣ La ruta se calcula sola</p>
+    </div>
+    <div id="info-ruta"></div>
+    <div class="botones">
+      <button id="btn-reiniciar">🗑️ Reiniciar</button>
+      <button id="btn-nodos">🔵 Ver nodos</button>
+    </div>
+    <p class="nota">💡 "Ver nodos" muestra el grafo de calles</p>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>

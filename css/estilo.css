@@ -1,8 +1,9 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #111;
 }
 
 #mapa {
@@ -11,49 +12,74 @@ body {
   background-color: #1a1a1a;
 }
 
-/* Panel de control flotante */
 #panel {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: rgba(0, 0, 0, 0.85);
-  color: #ddd;
-  padding: 15px 20px;
+  background: rgba(10, 12, 18, 0.92);
+  color: #ccc;
+  padding: 16px 18px;
   border-radius: 10px;
   z-index: 1000;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
-  max-width: 260px;
-  font-size: 0.9rem;
-  border: 1px solid #444;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.8), 0 0 0 1px rgba(0,200,255,0.15);
+  max-width: 270px;
+  font-size: 0.88rem;
+  border: 1px solid #2a2a3a;
 }
 
 #panel h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   color: #ffb800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
 }
 
-#panel p {
-  margin: 8px 0;
-}
-
-#btn-reiniciar {
-  background: #c44;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100%;
-  transition: background 0.2s;
-}
-
-#btn-reiniciar:hover {
-  background: #e55;
+#instrucciones p {
+  margin: 5px 0;
+  line-height: 1.4;
 }
 
 #info-ruta {
-  color: #0f0;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  min-height: 20px;
+}
+
+.botones {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.botones button {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
   font-weight: bold;
+  transition: all 0.2s;
+  background: #1a1a2a;
+  color: #ccc;
+}
+
+#btn-reiniciar {
+  border-color: #c44 !important;
+  color: #f88 !important;
+}
+#btn-reiniciar:hover { background: #3a1010 !important; }
+
+#btn-nodos {
+  border-color: #06a !important;
+  color: #4cf !important;
+}
+#btn-nodos:hover { background: #001a2a !important; }
+
+.nota {
   margin-top: 10px;
+  font-size: 0.75rem;
+  color: #555;
+  font-style: italic;
 }
